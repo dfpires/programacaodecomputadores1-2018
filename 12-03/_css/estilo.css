@@ -1,0 +1,162 @@
+@font-face{
+	font-family: 'FonteTeste';
+	src:url(../_fonts/bubblegum-sans-regular.otf);
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#ccc;
+	color:#000000; 
+}
+#interface{
+	background-color:#fff;
+	width: 900px;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+}
+#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+}
+#corpo {
+	display: block;
+	width: 485px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding: 0px 15px 15px 0px; */
+}
+#lateral {
+	display: block;
+	width: 349px;
+	float: right;
+	padding: 20px;
+	background-color: #ddd;
+	margin-top: 10px;
+}
+#lateral h1{
+	font-family: 'FonteTeste', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+#lateral h2{
+	background-color: #606060;
+	font-size: 15pt;
+	color: #fff;
+	padding: 5px;
+}
+
+#rodape{
+	clear:both;
+	border-top: 1px solid #606060;
+}
+#rodape p{
+	text-align: center;
+	padding-top: 15px;
+}
+#menu{
+	display: block;
+}
+#menu ul{
+	list-style: none; /* tira as marcações da lista */
+	text-transform: uppercase; /* texto em caixa alta */
+	float: right; /* flutua a direita */
+	padding: 0px; /* espaçamento interno */
+	margin: 0px; /* espaçamento externo */
+	top: -25px; /* aproximação com o topo */
+}
+#menu li{
+	display: inline-block; /* um ao lado do outro */
+	background-color: #ccc; /* cor do fundo */
+	padding: 10px; /* espaçamento interno */
+	margin: 2px; /* espaçamento externo */
+}
+#menu li:hover{
+	background-color: #606060; /* cor do fundo */
+	transition: background 1s;/* a mudança de background vai demorar 1s */
+	color: #fff;
+}
+#menu a{
+	color: #000; /* cor do texto do link */
+	text-decoration: none; /* tira o sublinhado do link */
+}
+#icone {
+	position: relative; /* a partir de onde a imagem está */
+	top: -30px; /* sobe a image */
+	left: 820px; /* desloca da esquerda para direita */
+}
+#cabecalho h1{
+	font-family: 'FonteTeste', sans-serif;
+	font-size: 30pt; /* tamanho da fonte */
+	color:#606060; /* cor acinzentado */
+	margin-bottom: 0px; /* espaçamento externo inferior */
+	padding: 0px; /* espaçamento interno */
+}
+#noticia h2{
+	font-size: 12pt;
+	color:#606060;
+	background-color: #ddd;
+	padding: 5px 0px 5px 10px;
+	margin: 5px 0px 5px 10px;
+}
+#noticia h1{
+	font-family: 'FonteTeste', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#noticia h3{
+	font-size: 9pt;
+	color: #606060;
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+#foto-legenda{
+	position: relative; /* considerar o local onde está e não o local da página */
+	border: 8px solid #fff;
+	box-shadow: 0px 0px 0px 10px #999999;
+}
+#foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+#foto-legenda figcaption{
+	opacity: 0;
+	position: absolute; /* ficou flutuante na página */
+	top: 0px; /* parte mais alta do quadro */
+	background-color: rgba(0,0,0,.4); /* fundo da legenda */
+	width: 100%; /* cobre o quadro todo na largura */
+	height: 100%; /* cobre o quadro todo na altura */
+	color: #fff; /* cor branca do texto */
+	padding: 10px; /* espaçamento interno */
+	box-sizing: border-box; /* pra ficar igual a caixa externa */
+	transition: opacity 1s; /* duração da transição de 1s  */
+}
+#foto-legenda:hover figcaption{
+	opacity: 1; /* ao passar mouse na foto, opacidade vai para 1 */
+}
+#tabela{
+	border: 1px solid #606060; /* borda da tabela */
+	border-spacing: 0px; /* espaçamento da borda ao texto */
+	margin-left: auto; /* centralizado */
+	margin-right: auto; /* centralizado */
+}
+#tabela td { /* para toda célula da tabela */
+	border: 1px solid #606060; /* borda */
+	padding: 10px; /* espaçamento interno */
+	vertical-align: top; /* alinhamento na vertical pelo topo */
+}
+.cd {
+	background-color: #cecece;
+}
+#tabela .ce{
+	color: #fff;
+	background-color: #606060;	
+	vertical-align: top;
+	font-weight: bold;
+	text-align: right;
+}
